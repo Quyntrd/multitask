@@ -12,7 +12,7 @@ def point(iter):
 
 
 if __name__ == "__main__":
-    """This soft finds number pi with Monte-Carlo's method by using multiprocessing"""
+    """This soft finds number pi with Monte-Carlo's method by using concurrent.futures"""
     parser = argparse.ArgumentParser(description='Input number of points')
     parser.add_argument('--points', type=int,default="100000", help='Input number of point')
     args = parser.parse_args()
